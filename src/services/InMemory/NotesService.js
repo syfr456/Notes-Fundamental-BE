@@ -1,3 +1,5 @@
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable no-undef */
 const { nanoid } = require('nanoid');
 
 class NotesService {
@@ -49,7 +51,7 @@ class NotesService {
     const updatedAt = new Date().toISOString();
 
     this._notes[index] = {
-      ...this_notes[index],
+      ...this._notes[index],
       title,
       tags,
       body,
