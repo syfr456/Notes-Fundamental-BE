@@ -1,9 +1,11 @@
+// mengimpor dotenv dan menjalankan konfigurasinya
 require('dotenv').config();
 
-// notes
 const Hapi = require('@hapi/hapi');
+
+// notes
 const notes = require('./src/api/notes');
-const NotesService = require('./src/services/InMemory/NotesService');
+const NotesService = require('./src/services/postgres/NotesService');
 const NotesValidator = require('./src/validator/notes');
 
 // users
