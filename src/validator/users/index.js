@@ -10,5 +10,4 @@ const UsersValidator = {
     }
   },
 };
-
 module.exports = UsersValidator;
